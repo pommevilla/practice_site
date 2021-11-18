@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="quarto-0.2.255">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>First site</title>
+  <title>Second</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -140,7 +140,7 @@
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">First site</h1>
+      <h1 class="quarto-secondary-nav-title">Second</h1>
       <button type="button" class="quarto-btn-toggle btn">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -154,10 +154,10 @@
   <div class="sidebar-menu-container"> 
   <ul class="list-unstyled mt-1">
       <li class="sidebar-item">
-  <a href="./new_site.html" class="active">First site</a>
+  <a href="./new_site.html" class="">First site</a>
 </li>
       <li class="sidebar-item">
-  <a href="./second.html" class="">Second</a>
+  <a href="./second.html" class="active">Second</a>
 </li>
   </ul>
   </div>
@@ -166,26 +166,36 @@
     <nav id="TOC" role="doc-toc" class="sidebar sidebar-toc">
 <h2 id="toc-title">On this page</h2>
 <ul>
-<li><a href="#this-is-some-markdown" class="nav-link active" data-scroll-target="#this-is-some-markdown">This is some markdown</a></li>
+<li><a href="#this-is-the-title-of-our-second-page" class="nav-link active" data-scroll-target="#this-is-the-title-of-our-second-page">This is the title of our second page</a></li>
 </ul>
 </nav>
 <!-- main -->
 <main class="content">
 <header id="title-block-header">
-<h1 class="title d-none d-lg-block display-7">First site</h1>
+<h1 class="title d-none d-lg-block display-7">Second</h1>
 </header>
 
-<p>This is a Quarto document. To learn more about Quarto visit <a href="https://quarto.org" class="uri">https://quarto.org</a>.</p>
-<section id="this-is-some-markdown" class="level2">
-<h2 class="anchored" data-anchor-id="this-is-some-markdown">This is some markdown</h2>
+<section id="this-is-the-title-of-our-second-page" class="level1">
+<h1>This is the title of our second page</h1>
+<p>Here is some text</p>
 <div class="cell">
-<div class="sourceCode" id="cb1"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<p></p><details>
+<summary>Plot mpg v cylinder</summary><p></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>mtcars <span class="sc">%&gt;%</span> </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(mpg, cyl)) <span class="sc">+</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> <span class="fu">as.factor</span>(cyl))) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output-display">
-<p><img src="new_site_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
+<div class="quarto-figure quarto-figure-center" width="672" alt="A scatter plot of mpg vs cylinder">
+<figure class="figure">
+<p><img src="second_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" alt="A scatter plot of mpg vs cylinder" width="672"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">A plot of mtcars</figcaption><p></p>
+</figure>
 </div>
 </div>
-<div class="cell">
-
 </div>
 
 

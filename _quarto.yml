@@ -5,3 +5,28 @@ project:
 
 
 
+site:
+
+  sidebar:
+    style: "docked"
+    collapse-level: 2
+    contents:
+      - new_site.qmd
+      - second.qmd
+      
+
+  navbar:
+    background: primary
+    search: true
+    title: "Quarto practice site"
+    
+    right:
+      - text: "GERMS Lab"
+        url: "http://germslab.org"
+        
+        
+format:
+  html:
+    theme: cosmo
+    css: styles/styles.scss
+    toc: true

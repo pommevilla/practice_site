@@ -5,5 +5,12 @@
     "title": "First site",
     "section": "This is some markdown",
     "text": "plot(1:10)"
+  },
+  {
+    "objectID": "second.html",
+    "href": "second.html",
+    "title": "Second",
+    "section": "",
+    "text": "This is the title of our second page\nHere is some text\n\nlibrary(tidyverse)\n\n\n\nPlot mpg v cylinder\nmtcars %>% \n  ggplot(aes(mpg, cyl)) +\n  geom_point(aes(color = as.factor(cyl))) \n\n\n\n\n\nA plot of mtcars"
   }
 ]

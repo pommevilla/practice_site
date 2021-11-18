@@ -1,0 +1,24 @@
+---
+title: "Second"
+---
+
+# This is the title of our second page
+
+Here is some text
+
+```{r}
+#| warning: false
+library(tidyverse)
+```
+
+
+```{r}
+#| fig-cap: "A plot of mtcars"
+#| fig-alt: "A scatter plot of mpg vs cylinder"
+#| code-fold: true
+#| code-summary: "Plot mpg v cylinder"
+mtcars %>% 
+  ggplot(aes(mpg, cyl)) +
+  geom_point(aes(color = as.factor(cyl))) 
+```
+
