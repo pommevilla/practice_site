@@ -1,0 +1,16 @@
+{
+  "hash": "99845ad7079decabf7ad86336f1a0499",
+  "result": {
+    "markdown": "---\ntitle: \"First site\"\n---\n\nThis is a Quarto document. To learn more about Quarto visit <https://quarto.org>.\n\n## This is some markdown\n\n::: {.cell}\n\n```{.r .cell-code}\nplot(1:10)\n```\n\n::: {.cell-output-display}\n![](new_site_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n::: {.cell}\n\n:::\n",
+    "supporting": [
+      "new_site_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": [],
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": null
+  }
+}

@@ -1,0 +1,7 @@
+project:
+  title: "new_site"
+  output-dir: docs
+  type: "site"
+
+
+
